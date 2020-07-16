@@ -14,6 +14,7 @@ import {
 } from "react-native";
 
 import { ScrollView } from "react-native-gesture-handler";
+import { ServerStyleSheet } from "styled-components";
 
 const Profile = ({ navigation }) => {
   return (
@@ -25,15 +26,27 @@ const Profile = ({ navigation }) => {
               style={styles.logo}
               source={require("../assets/lineup.png")}
             ></Image>
-            <Text style={styles.title}>My Profile </Text>
+            <Text style={styles.title}>Next Best Friend</Text>
           </View>
         </SafeAreaView>
       </ScrollView>
+
       <TouchableOpacity style={(styles.buttonRow, styles.tanrow)}>
         <View>
-          <Text style={styles.title}>Jay Jay </Text>
+          <Text style={styles.buttonText}>Jayne MacDonald </Text>
         </View>
       </TouchableOpacity>
+
+      <ScrollView>
+        <SafeAreaView>
+          <View>
+            <Image
+              style={styles.image}
+              source={require("../assets/ProfilePic.png")}
+            ></Image>
+          </View>
+        </SafeAreaView>
+      </ScrollView>
 
       <Footer></Footer>
     </>
@@ -55,8 +68,11 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
   image: {
+    width: 400,
+    height: 200,
+    alignItems: "center",
+    flexGrow: 1,
     flex: 1,
-    resizeMode: "cover",
     justifyContent: "center",
   },
   buttonRow: {
@@ -64,7 +80,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
   },
-  // titleContainer: {
+  buttonText: {
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "300",
+    backgroundColor: "#D07A38",
+    color: "white",
+    paddingVertical: 15,
+  },
+  // titleContainer {
   //   flex: 1,
   //   backgroundColor: "#D07A38",
   //   justifyContent: "center",
@@ -96,11 +120,6 @@ const styles = StyleSheet.create({
   //   margin: 0,
   //   width: "50%",
   // },
-  buttonText: {
-    textAlign: "center",
-    fontSize: 20,
-    fontWeight: "bold",
-  },
   // button1: {
   //   width: "100%",
   //   height: 100,
