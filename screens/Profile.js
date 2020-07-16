@@ -48,7 +48,7 @@ const Profile = ({ navigation }) => {
         </SafeAreaView>
       </ScrollView>
       <View>
-        <Text style={styles.button1}>Jayne MacDonald </Text>
+        <Text style={styles.button1}>Jayne MacDonald</Text>
       </View>
 
       <TouchableOpacity style={(styles.buttonRow, styles.tanrow)}>
@@ -68,7 +68,7 @@ const Profile = ({ navigation }) => {
 
       <TouchableOpacity style={(styles.buttonRow, styles.tanrow)}>
         <View>
-          <Text style={styles.button1}>Jayne MacDonald </Text>
+          <Text style={styles.button1}>Local Services</Text>
         </View>
       </TouchableOpacity>
 
