@@ -39,11 +39,9 @@ const Profile = ({ navigation }) => {
         </SafeAreaView>
       </ScrollView>
       <View style={styles.bottomButtons}>
-          <View style={styles.profileButtons}>
-              <Text style={styles.profileText, styles.edit}>Edit Profile</Text>
-              <Text style={styles.profileText, styles.logOut}>Log out</Text>
-              <Text style={styles.profileText, styles.settings}>Settings</Text>
-          </View>
+          <Text style={styles.edit}>Edit Profile</Text>
+          <Text style={styles.logOut}>Log out</Text>
+          <Text style={styles.settings}>Settings</Text>
       </View>
       <Footer></Footer>
     </>
@@ -57,6 +55,7 @@ const styles = StyleSheet.create({
     alignContent: "center",
 
   },
+
   title: {
     color: "white",
     marginTop: 10,
@@ -64,22 +63,25 @@ const styles = StyleSheet.create({
     textAlign: "center",
     opacity: 0.8,
   },
+
   image: {
     flex:1,
     padding: 10,
     justifyContent: 'center',
   },
+
   buttonRow: {
     flex: 1,
     flexDirection: "row",
     width: "100%",
-    // justifyContent: "center",
   },
+
   imagesBlock: {
     flex:1,
     alignItems: 'center',
     backgroundColor: "#fff",
   },
+
   buttonText: {
     textAlign: "center",
     fontSize: 20,
@@ -89,16 +91,12 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
 
-  profileButtons: {
-    flex:1,
-    flexDirection: "row",
-  },
-
   edit: {
     flex:1,
     backgroundColor: "#326D67",
     color: "#fff",
     textAlign: "center",
+    lineHeight:50,
   },
 
   logOut: {
@@ -106,6 +104,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#383732",
     color: "#fff",
     textAlign: "center",
+    lineHeight:50,
   },
 
   settings: {
@@ -113,15 +112,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#D07A38",
     color: "#fff",
     textAlign: "center",
+    lineHeight:50,
   },
 
   bottomButtons: {
     flexDirection: 'row', width:'100%',
     flex: 1,
-
-  },
- 
-  
+    alignItems:"flex-end",
+    },
 
 });
 
