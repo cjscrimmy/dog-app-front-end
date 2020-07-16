@@ -25,10 +25,15 @@ const Profile = ({ navigation }) => {
               style={styles.logo}
               source={require("../assets/lineup.png")}
             ></Image>
-            <Text style={styles.title}>Profile Page </Text>
+            <Text style={styles.title}>My Profile </Text>
           </View>
         </SafeAreaView>
       </ScrollView>
+      <TouchableOpacity style={(styles.buttonRow, styles.tanrow)}>
+        <View>
+          <Text style={styles.title}>Jay Jay </Text>
+        </View>
+      </TouchableOpacity>
 
       <Footer></Footer>
     </>
@@ -52,6 +57,11 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     resizeMode: "cover",
+    justifyContent: "center",
+  },
+  buttonRow: {
+    flex: 1,
+    flexDirection: "row",
     justifyContent: "center",
   },
   // titleContainer: {
@@ -86,11 +96,11 @@ const styles = StyleSheet.create({
   //   margin: 0,
   //   width: "50%",
   // },
-  // buttonText: {
-  //   textAlign: "center",
-  //   fontSize: 20,
-  //   fontWeight: "bold",
-  // },
+  buttonText: {
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "bold",
+  },
   // button1: {
   //   width: "100%",
   //   height: 100,
@@ -99,11 +109,6 @@ const styles = StyleSheet.create({
   // },
   // mintButton: {
   //   backgroundColor: "#19A79C",
-  // },
-  // buttonRow: {
-  //   flex: 1,
-  //   flexDirection: "row",
-  //   justifyContent: "center",
   // },
   // buttonText: {
   //   fontSize: 24,
