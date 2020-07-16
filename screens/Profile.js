@@ -54,7 +54,7 @@ const Profile = ({ navigation }) => {
       <TouchableOpacity style={(styles.buttonRow, styles.tanrow)}>
         <View>
           <Text style={styles.button2}>
-            Hi,I am Nazli, 34, live in a lovely cottage in Balmain. l have grown
+            Hi,I'm Jayne, 34, live in a lovely cottage in Balmain. l have grown
             up with 3 adorable dogs. Living with dogs for 20 years made me a big
             dog lover and an expert of their body language. l will be at home
             and your dog will receive lots of hugs, pets and understanding and
@@ -68,7 +68,7 @@ const Profile = ({ navigation }) => {
 
       <TouchableOpacity style={(styles.buttonRow, styles.tanrow)}>
         <View>
-          <Text style={styles.button1}>Local Services</Text>
+          <Text style={styles.buttonText}>Local Services</Text>
         </View>
       </TouchableOpacity>
 
